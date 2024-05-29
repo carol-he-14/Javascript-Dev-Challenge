@@ -62,6 +62,7 @@ Getting stock data has a **10% chance of failure** (by design). The application 
 * Make the spinner rotate using CSS3 - Please write custom CSS.
 * Query the backend for list of available stocks.
 * Query the backend for data about each stock.
+* Display stock data on the front end any way you like.
 * Hide the spinner after all data is loaded.
 * Log to the console the result stock data in a structured way.
 * Fix backend (app.js) to return a meaningful error message when stock data cannot be retrieved (now the request just hangs!).
