@@ -1,11 +1,11 @@
-.spinner-container {
+#spinner-container {
   display: flex;
   justify-content: center;
   height: 100vh;
   width: 100vw;
 }
 
-.spinner{
+.spinner {
   font-size: 140px;
   animation: rotate 3s linear infinite;
   line-height: 100vh;
@@ -16,13 +16,19 @@
   content: '◌';
 }
 
+#content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
 #chart {
-    border: 1px solid black;
-    display: none;
+  border: 1px solid black;
+  display: none;
 }
 
 @keyframes rotate {
   to {
-    transform: rotate(359deg); /* some browsers don't display spin when it is 360 deg */
+    transform: rotate(359deg);
   }
 }

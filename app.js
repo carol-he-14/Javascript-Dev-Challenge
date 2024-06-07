@@ -12,8 +12,8 @@ app.get('/stocks', async (req, res) => {
     const stockSymbols = await stocks.getStocks()
     res.status(200).send({ stockSymbols })
   } catch (error) {
-    res.status(500).send({ message: error.message}) // verify that 500 is the correct status
-  }  
+    res.status(500).send({ message: error.message})
+  }
 })
 
 app.get('/stocks/:symbol', async (req, res) => {
